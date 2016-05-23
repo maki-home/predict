@@ -1,0 +1,9 @@
+---
+applications:
+  - name: predict
+    memory: 512m
+    instances: 1
+    path: target/predict-0.0.1-SNAPSHOT.jar
+    buildpack: java_buildpack_offline
+    services:
+    - predict-db
